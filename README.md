@@ -2,9 +2,9 @@
 
 <h3>Team members:</h3>
 
-Shreyas l arer(shreyalshreyas5@gmail.com)
-Anoop p biradar(2602anooppb@gmail.com)
-Satwik p adiga(satwik10705@gmail.com)
+Shreyas l arer(shreyalshreyas5@gmail.com)<br>
+Anoop p biradar(2602anooppb@gmail.com)<br>
+Satwik p adiga(satwik10705@gmail.com)<br>
 
 Currently, this project is focused on front_end development aspect.
 In the java file you can access all codes and images i used.
