@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 28px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.event-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.event-list th,
+.event-list td {
+    border: 1px solid #ced4da;
+    padding: 12px;
+    text-align: left;
+}
+
+.event-list th {
+    background-color: #f8f9fa;
+}
+
+#familyMembersList li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#familyMembersList li button {
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#familyMembersList li button:hover {
+    background-color: #c82333;
+}
+
+#chatMessages {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    height: 150px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    button {
+        font-size: 14px;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="time"],
+    select {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    button {
+        font-size: 12px;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="time"],
+    select {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+    button {
+        padding: 8px;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="time"],
+    select {
+        font-size: 10px;
+    }
+}

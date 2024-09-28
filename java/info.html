@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Planner</title>
+    <link rel="stylesheet" href="info.css">
+    <!-- Include SheetJS for Excel export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div id="app" class="container">
+        <!-- Language Selector -->
+        <div id="languageSelector">
+            <h1>Family Event Scheduler</h1>
+            <label for="language">Select Language:</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="sp">Spanish</option>
+                <option value="fr">Français</option>
+                <option value="gr">German</option>
+                <option value="ar">Arabic</option>
+                <option value="ru">Russian</option>
+                <option value="pr">Portuguese</option>
+                <option value="indo">Indonesian</option>
+                <option value="fre">French</option>
+                <option value="hi">Hindi</option>
+                <option value="kn">Kannada</option>
+                <option value="be">Bengali</option>
+            </select>
+        </div>
+
+        <!-- Family Member Customization -->
+        <section id="familyCustomization">
+            <h2>Family Members Customization</h2>
+            <input type="text" id="familyMember" placeholder="Add family member">
+            <label for="familyMemberColor">Choose color:</label>
+            <input type="color" id="familyMemberColor" value="#ff0000">
+            <br><br>
+            <button id="addFamilyMemberBtn">Add Member</button>
+            <ul id="familyMembersList"></ul>
+        </section>
+
+        <!-- Event Scheduling Section -->
+        <section id="eventScheduling">
+            <h2>Schedule Event</h2>
+            <input type="text" id="eventTitle" placeholder="Event Title">
+            <input type="date" id="eventStartDate">
+            <input type="date" id="eventEndDate">
+            <input type="time" id="eventStartTime">
+            <input type="time" id="eventEndTime">
+            <button id="addEventBtn">Add Event</button>
+            <br>
+
+            <!-- Event List -->
+            <div class="event-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Google Calendar</th>
+                            <th>Outlook Calendar</th>
+                            <th>Take Note</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="eventsBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- AI Suggested Times -->
+        <section id="aiScheduling">
+            <h2>AI Suggested Times</h2>
+            <button id="suggestTimesBtn">Suggest Optimal Times</button>
+            <ul id="suggestedTimes"></ul>
+        </section>
+
+        <!-- Chat Section -->
+        <section id="chatSection">
+            <h2>Family Chat</h2>
+            <div id="chatMessages"></div>
+            <input type="text" id="chatInput" placeholder="Type a message">
+            <button id="sendChatBtn">Send</button>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section id="todoListSection">
+            <h2>To-Do List</h2>
+            <input type="text" id="todoInput" placeholder="Add new task">
+            <button id="addTodoBtn">Add Task</button>
+            <ul id="todoList"></ul>
+        </section>
+
+        <!-- Export to Excel -->
+        <section id="excelExport">
+            <h2>Export to Excel</h2>
+            <button id="exportBtn">Export Events to Excel</button>
+        </section>
+        <section>
+            <h1>Location Display</h1>
+            <input type="text" id="locationInput" placeholder="Enter a location">
+            <button id="showLocationBtn">Show Location</button>
+        </section>
+        <section></section>
+        <h1>Family Expenses Management</h1>
+        <div>
+            <input type="text" id="familyMemberInput" placeholder="Enter Family Member's Name">
+            <input type="number" id="expenseInput" placeholder="Enter Expense Amount" min="0">
+            <br><br>
+            <button id="addExpenseBtn">Add Expense</button>
+    
+        
+        <h2>Expense List</h2>
+        <ul id="expenseList"></ul>
+    
+        <button id="viewExpensesBtn">View Expenses</button>
+    </section>
+
+        <!-- Location Sharing Section -->
+       
+    <!-- External JavaScript -->
+    <script src="info.js"></script>
+</body>
+</html>
